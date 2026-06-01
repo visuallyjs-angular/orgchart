@@ -1,0 +1,7 @@
+<div class="vjs-orgchart">
+  <vjs-surface url="/dataset.json" [viewOptions]="viewOptions" [renderOptions]="renderOptions" class="vjs-orgchart-canvas">
+    <vjs-controls [undoRedo]="false" [clear]="false"/>
+    <vjs-miniview/>
+  </vjs-surface>
+  <orgchart-inspector [onSelect]="selectPerson.bind(this)" class="vjs-orgchart-rhs"/>
+</div>
