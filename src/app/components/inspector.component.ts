@@ -1,6 +1,7 @@
 import {InspectorComponent, VisuallyJsModule} from '@visuallyjs/browser-ui-angular';
 import {Component, Input} from '@angular/core';
 import {Vertex} from "@visuallyjs/browser-ui";
+import officeLocations from '../office-locations';
 
 @Component({
   selector:"orgchart-inspector",
@@ -10,6 +11,20 @@ import {Vertex} from "@visuallyjs/browser-ui";
     @if(current != null) {
         <h1>{{ current.data['name'] }}</h1>
         <h2>{{ current.data['title'] }}</h2>
+
+        <div class="vjs-orgchart-inspector-details">
+            <div class="vjs-node-status-container">
+                <span class="vjs-node-status" [class.vjs-node-status-online]="current.data['online']" [class.vjs-node-status-offline]="!current.data['online']"></span>
+                <span class="vjs-node-status-text">{{ current.data['online'] ? 'Online' : 'Offline' }}</span>
+            </div>
+            <a [href]="'mailto:' + current.data['email']" class="vjs-node-email">{{current.data['email']}}</a>
+            <span class="vjs-node-location">
+                {{current.data['location']}}
+                @if (timezone) {
+                    <span class="vjs-node-timezone"> ({{getTimezoneOffset(timezone)}})</span>
+                }
+            </span>
+        </div>
 
         @if(manager != null) {
             <h5>Reports to:</h5>
@@ -45,6 +60,16 @@ export class OrgchartInspector extends InspectorComponent {
     current: any = null
     manager: any = null
     reports: any[] = []
+
+    get timezone() {
+        if (!this.current) return "";
+        const locationData = officeLocations.find(loc => loc.name === this.current.data['location'])
+        return locationData ? locationData.timezone : ""
+    }
+
+    getTimezoneOffset(timezone: string) {
+        return timezone.match(/\((UTC[+-]\d+)\)/)?.[1] || timezone;
+    }
 
     getImage(person: any) {
         return `/avatars/${person.data.img}`

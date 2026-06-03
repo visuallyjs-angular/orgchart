@@ -25,10 +25,7 @@
 
 .vjs-orgchart-canvas {
     background-color: #f8fafc;
-    display: flex;
     flex-grow: 1;
-    position: relative;
-    overflow: hidden !important;
 }
 
 .vjs-orgchart-rhs {
@@ -104,7 +101,7 @@ vjs-miniview {
      display: flex;
      align-items: center;
      width: 240px;
-     height: 80px;
+     min-height: 80px;
      background-color: white;
      box-shadow: var(--vjs-orgchart-shadow-sm);
      transition: box-shadow 0.2s ease, border-color 0.2s ease;
@@ -138,7 +135,14 @@ vjs-miniview {
     text-overflow: ellipsis;
 }
 
-.vjs-node > div span:last-child {
+.vjs-node > div .vjs-node-title {
+    font-size: 13px;
+}
+
+.vjs-node > div span:last-child,
+.vjs-node-email,
+.vjs-node-location,
+.vjs-node-timezone {
     font-size: 12px;
     color: var(--vjs-orgchart-text-muted);
     white-space: nowrap;
@@ -157,6 +161,20 @@ vjs-miniview {
 
 .vjs-selected-element .vjs-node > div span:first-child {
     color: var(--vjs-orgchart-color-selected);
+}
+
+.vjs-orgchart-inspector-details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-bottom: 16px;
+}
+
+.vjs-orgchart-inspector-details .vjs-node-email,
+.vjs-orgchart-inspector-details .vjs-node-location {
+    font-size: 13px;
+    white-space: normal;
+    overflow: visible;
 }
 
 /* ----------- inspector --------------------- */
@@ -214,3 +232,52 @@ vjs-miniview {
     color: var(--vjs-orgchart-text-muted);
 }
 
+
+.vjs-node-email {
+    font-style: italic;
+    margin-top: 2px;
+    text-decoration: none;
+}
+
+.vjs-node-email:hover {
+    text-decoration: underline;
+    color: var(--vjs-orgchart-color-selected);
+}
+
+.vjs-node-location {
+    font-weight: 500;
+}
+
+.vjs-node-timezone {
+    font-weight: normal;
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+.vjs-node-status-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 2px;
+}
+
+.vjs-node-status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.vjs-node-status-online {
+    background-color: #22c55e;
+    box-shadow: 0 0 4px #22c55e;
+}
+
+.vjs-node-status-offline {
+    background-color: #ef4444;
+}
+
+.vjs-node-status-text {
+    font-size: 11px;
+    color: var(--vjs-orgchart-text-muted);
+}

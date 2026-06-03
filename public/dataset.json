@@ -4,170 +4,300 @@
       "id": "1",
       "name": "Marek",
       "img": "tile-0.jpg",
-      "title": "VP Marketing"
+      "title": "VP Marketing",
+      "location": "Toronto",
+      "email": "marek@glixomorph.com",
+      "online": true
     },
     {
       "id": "2",
       "name": "Sven",
       "img": "tile-1.jpg",
-      "title": "Marketing"
+      "title": "Marketing",
+      "location": "London",
+      "email": "sven@glixomorph.com",
+      "online": false
     },
     {
       "id": "3",
       "name": "Barry",
       "img": "tile-2.jpg",
-      "title": "Sales"
+      "title": "Sales",
+      "location": "Berlin",
+      "email": "barry@glixomorph.com",
+      "online": true
     },
     {
       "id": "4",
       "name": "Alicia",
       "img": "tile-3.jpg",
-      "title": "VP Sales"
+      "title": "VP Sales",
+      "location": "Singapore",
+      "email": "alicia@glixomorph.com",
+      "online": true
     },
     {
       "id": "5",
       "name": "Amanda",
       "img": "tile-4.jpg",
-      "title": "CEO"
+      "title": "CEO",
+      "location": "Sydney",
+      "email": "amanda@glixomorph.com",
+      "online": false
     },
     {
       "id": "6",
       "name": "Sonia",
       "img": "tile-5.jpg",
-      "title": "VP Engineering"
+      "title": "VP Engineering",
+      "location": "Toronto",
+      "email": "sonia@glixomorph.com",
+      "online": true
     },
     {
       "id": "7",
       "name": "Tony",
       "img": "tile-6.jpg",
-      "title": "CTO"
+      "title": "CTO",
+      "location": "London",
+      "email": "tony@glixomorph.com",
+      "online": false
     },
     {
       "id": "8",
       "name": "Frank",
       "img": "tile-7.jpg",
-      "title": "Development Manager"
+      "title": "Development Manager",
+      "location": "Berlin",
+      "email": "frank@glixomorph.com",
+      "online": true
     },
     {
       "id": "9",
       "name": "Jim",
       "img": "tile-8.jpg",
-      "title": "Sales"
+      "title": "Sales",
+      "location": "Singapore",
+      "email": "jim@glixomorph.com",
+      "online": false
     },
     {
       "id": "10",
       "name": "Barb",
       "img": "tile-9.jpg",
-      "title": "CMO"
+      "title": "CMO",
+      "location": "Sydney",
+      "email": "barb@glixomorph.com",
+      "online": true
     },
     {
       "id": "11",
       "name": "Janet",
       "img": "tile-10.jpg",
-      "title": "Sales"
+      "title": "Sales",
+      "location": "Toronto",
+      "email": "janet@glixomorph.com",
+      "online": false
     },
     {
       "id": "12",
       "name": "Joanne",
       "img": "tile-11.jpg",
-      "title": "Sales"
+      "title": "Sales",
+      "location": "London",
+      "email": "joanne@glixomorph.com",
+      "online": true
     },
     {
       "id": "13",
       "name": "Alphonse",
       "img": "tile-12.jpg",
-      "title": "CFO"
+      "title": "CFO",
+      "location": "Berlin",
+      "email": "alphonse@glixomorph.com",
+      "online": false
     },
     {
       "id": "14",
       "name": "Steve",
       "img": "tile-13.jpg",
-      "title": "Finance"
+      "title": "Finance",
+      "location": "Singapore",
+      "email": "steve@glixomorph.com"
     },
     {
       "id": "15",
       "name": "Brenda",
       "img": "tile-14.jpg",
-      "title": "Finance"
+      "title": "Finance",
+      "location": "Sydney",
+      "email": "brenda@glixomorph.com"
     },
     {
       "id": "16",
       "name": "Wendy",
       "img": "tile-15.jpg",
-      "title": "Development Manager"
+      "title": "Development Manager",
+      "location": "Toronto",
+      "email": "wendy@glixomorph.com"
     },
     {
       "id": "17",
       "name": "Fiona",
       "img": "tile-16.jpg",
-      "title": "VP HR"
+      "title": "VP HR",
+      "location": "London",
+      "email": "fiona@glixomorph.com"
     },
     {
       "id": "18",
       "name": "James",
       "img": "tile-17.jpg",
-      "title": "HR"
+      "title": "HR",
+      "location": "Berlin",
+      "email": "james@glixomorph.com"
     },
     {
       "id": "19",
       "name": "Andy",
       "img": "tile-18.jpg",
-      "title": "HR"
+      "title": "HR",
+      "location": "Singapore",
+      "email": "andy@glixomorph.com"
     },
     {
       "id": "20",
       "name": "In In",
       "img": "tile-19.jpg",
-      "title": "Development"
+      "title": "Development",
+      "location": "Sydney",
+      "email": "inin@glixomorph.com"
     },
     {
       "id": "21",
       "name": "Dave",
       "img": "tile-20.jpg",
-      "title": "Development"
+      "title": "Development",
+      "location": "Toronto",
+      "email": "dave@glixomorph.com"
     },
     {
       "id": "22",
       "name": "Gabbie",
       "img": "tile-21.jpg",
-      "title": "Development"
+      "title": "Development",
+      "location": "London",
+      "email": "gabbie@glixomorph.com"
     },
     {
       "id": "23",
       "name": "Nash",
       "img": "tile-22.jpg",
-      "title": "Development"
+      "title": "Development",
+      "location": "Berlin",
+      "email": "nash@glixomorph.com"
     },
     {
       "id": "24",
       "name": "Roman",
       "img": "tile-23.jpg",
-      "title": "Development"
+      "title": "Development",
+      "location": "Singapore",
+      "email": "roman@glixomorph.com"
     }
   ],
   "edges": [
-    { "source": "5", "target": "10"},
-    { "source": "5", "target": "7"},
-    { "source": "5", "target": "13"},
-    { "source": "5", "target": "17"},
-    { "source": "10", "target": "4"},
-    { "source": "10", "target": "1"},
-    { "source": "7", "target": "6"},
-    { "source": "1", "target": "2"},
-    { "source": "4", "target": "3"},
-    { "source": "4", "target": "9"},
-    { "source": "6", "target": "8"},
-    { "source": "6", "target": "16"},
-    { "source": "4", "target": "11"},
-    { "source": "4", "target": "12"},
-    { "source": "13", "target": "14"},
-    { "source": "13", "target": "15"},
-    { "source": "17", "target": "18"},
-    { "source": "17", "target": "19"},
-    { "source": "8", "target": "21"},
-    { "source": "8", "target": "22"},
-    { "source": "16", "target": "23"},
-    { "source": "16", "target": "24"},
-    { "source": "16", "target": "20"}
+    {
+      "source": "5",
+      "target": "10"
+    },
+    {
+      "source": "5",
+      "target": "7"
+    },
+    {
+      "source": "5",
+      "target": "13"
+    },
+    {
+      "source": "5",
+      "target": "17"
+    },
+    {
+      "source": "10",
+      "target": "4"
+    },
+    {
+      "source": "10",
+      "target": "1"
+    },
+    {
+      "source": "7",
+      "target": "6"
+    },
+    {
+      "source": "1",
+      "target": "2"
+    },
+    {
+      "source": "4",
+      "target": "3"
+    },
+    {
+      "source": "4",
+      "target": "9"
+    },
+    {
+      "source": "6",
+      "target": "8"
+    },
+    {
+      "source": "6",
+      "target": "16"
+    },
+    {
+      "source": "4",
+      "target": "11"
+    },
+    {
+      "source": "4",
+      "target": "12"
+    },
+    {
+      "source": "13",
+      "target": "14"
+    },
+    {
+      "source": "13",
+      "target": "15"
+    },
+    {
+      "source": "17",
+      "target": "18"
+    },
+    {
+      "source": "17",
+      "target": "19"
+    },
+    {
+      "source": "8",
+      "target": "21"
+    },
+    {
+      "source": "8",
+      "target": "22"
+    },
+    {
+      "source": "16",
+      "target": "23"
+    },
+    {
+      "source": "16",
+      "target": "24"
+    },
+    {
+      "source": "16",
+      "target": "20"
+    }
   ]
 }
