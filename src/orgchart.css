@@ -86,7 +86,7 @@ vjs-miniview {
 
 /* ------------------- edge styles -------------------------- */
 
-.vjs-connector path {
+.vjs-connector-path {
     stroke: var(--vjs-orgchart-text-muted);
     stroke-width: 1.5px;
 }
