@@ -2,11 +2,11 @@
   "nodes": [
     {
       "id": "1",
-      "name": "Marek",
+      "name": "Dave",
       "img": "tile-0.jpg",
       "title": "VP Marketing",
       "location": "Toronto",
-      "email": "marek@glixomorph.com",
+      "email": "dave@glixomorph.com",
       "online": true
     },
     {
@@ -175,11 +175,11 @@
     },
     {
       "id": "21",
-      "name": "Dave",
+      "name": "Marek",
       "img": "tile-20.jpg",
-      "title": "Development",
-      "location": "Toronto",
-      "email": "dave@glixomorph.com"
+      "title": "Intern",
+      "location": "Prague",
+      "email": "marek@glixomorph.com"
     },
     {
       "id": "22",
